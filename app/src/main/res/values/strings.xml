@@ -10,4 +10,13 @@
     <string name="signup_button">Sign Up</string>
     <string name="email_field">Email</string>
     <string name="title_activity_signup">SignupActivity</string>
+    <string name="menu_logout_label">Logout</string>
+    <string name="title_section1">Inbox</string>
+    <string name="title_section2">Friends</string>
+    <string name="no_messages_text">No new messages</string>
+    <string name="no_friends_text">No friends available</string>
+    <string name="edit_friends_label">Edit Friends</string>
+    <string name="title_activity_edit_friends">EditFriendsActivity</string>
+    <string name="error_title">Oops!</string>
+    <string name="error_message">There was an error, please try again</string>
 </resources>
