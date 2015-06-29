@@ -2,6 +2,14 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_camera"
+        android:orderInCategory="50"
+        android:title="@string/camera_label"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_camera"/>
+
     <item
         android:id="@+id/action_logout"
         android:orderInCategory="100"
@@ -13,4 +21,6 @@
         android:orderInCategory="200"
         app:showAsAction="never"
         android:title="@string/edit_friends_label"/>
+
+
 </menu>

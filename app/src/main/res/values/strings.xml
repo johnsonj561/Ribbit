@@ -19,4 +19,18 @@
     <string name="title_activity_edit_friends">EditFriendsActivity</string>
     <string name="error_title">Oops!</string>
     <string name="error_message">There was an error, please try again</string>
+    <string name="camera_label">Camera</string>
+    <string name="error_external_storage">Problem accessing device storage</string>
+    <string name="general_error_message">Sorry, there was an error</string>
+    <string name="video_file_size_warning">The selected video must be less than 10MB</string>
+    <string name="error_locating_file">There was a problem with selected file</string>
+    <string name="file_size_too_large">The selected file is too large! Select a new file.</string>
+    <string-array name="camera_choices">
+        <item>Take Picture</item>
+        <item>Take Video</item>
+        <item>Choose Picture</item>
+        <item>Choose Video</item>
+    </string-array>
+    <string name="title_activity_choose_recipients">ChooseRecipients</string>
+    <string name="no_recipients_text">No friends available</string>
 </resources>
