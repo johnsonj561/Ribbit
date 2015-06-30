@@ -16,9 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.widget.Toast;
-
 import com.parse.ParseUser;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,6 +42,7 @@ public class MainActivity extends ActionBarActivity  {
     public static final int MEDIA_TYPE_VIDEO = 5;
     public static final int FILE_SIZE_LIMIT = 1024 * 1024 * 10; //10MB
     protected Uri mMediaUri;
+
 
 
     protected DialogInterface.OnClickListener mDialogListener = new DialogInterface.OnClickListener(){
@@ -181,6 +180,7 @@ public class MainActivity extends ActionBarActivity  {
     }
 
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data){
         super.onActivityResult(requestCode, resultCode, data);
@@ -235,6 +235,15 @@ public class MainActivity extends ActionBarActivity  {
             }
             Log.d(TAG, "Starting ChooseRecipients Intent");
             Intent recipientsIntent = new Intent(this, ChooseRecipients.class);
+            String fileType;
+            if(requestCode == PIC_PHOTO || requestCode == TAKE_PHOTO_REQUEST){
+                fileType = ParseConstants.TYPE_IMAGE;
+            }
+            else{
+                fileType = ParseConstants.TYPE_VIDEO;
+            }
+            recipientsIntent.putExtra(ParseConstants.KEY_FILE_TYPE, fileType);
+
             recipientsIntent.setData(mMediaUri);
             startActivity(recipientsIntent);
         }
